@@ -1,14 +1,7 @@
 package com.innomind.msffinance.web.service;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Base64;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -39,10 +32,7 @@ import com.innomind.msffinance.web.model.InterestChart;
 import com.innomind.msffinance.web.model.MsfClient;
 import com.innomind.msffinance.web.model.MsfClientAltPhone;
 import com.innomind.msffinance.web.model.MsfClientDocument;
-import com.innomind.msffinance.web.model.MsfClientInterest;
-import com.innomind.msffinance.web.model.MsfDocumentType;
 import com.innomind.msffinance.web.model.MsfStatus;
-import com.innomind.msffinance.web.model.RequestClient;
 import com.innomind.msffinance.web.util.MsfFinanceUtil;
 
 @Service("userService")
