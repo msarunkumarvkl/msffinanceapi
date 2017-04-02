@@ -46,7 +46,7 @@ public class AppConfiguration extends WebMvcConfigurerAdapter{
 	protected InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver
                           = new InternalResourceViewResolver();
-		viewResolver.setPrefix("/WEB-INF/pages/");
+		viewResolver.setPrefix("/WEB-INF/");
 		viewResolver.setSuffix(".html");
 		return viewResolver;
 	}
@@ -78,6 +78,10 @@ public class AppConfiguration extends WebMvcConfigurerAdapter{
 		.addResourceLocations("/WEB-INF/bower_components/");
 		registry.addResourceHandler("/images/**")
 		.addResourceLocations("/WEB-INF/images/");
+		registry.addResourceHandler("/*.ico")
+		.addResourceLocations("/WEB-INF/");
+		registry.addResourceHandler("/*.txt")
+		.addResourceLocations("/WEB-INF/");
 	}
 	
 	@Override

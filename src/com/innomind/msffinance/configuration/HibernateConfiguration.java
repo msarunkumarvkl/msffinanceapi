@@ -20,7 +20,7 @@ public class HibernateConfiguration {
 	@Bean
 	protected DataSource dataSource(){
 		final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
-		return dsLookup.getDataSource("java:/MySqlDS");
+		return dsLookup.getDataSource("java:jboss/datasources/MySQLDS");
 	}
 	
 	@Bean 

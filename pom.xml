@@ -284,7 +284,7 @@
         <configuration>
           <warSourceDirectory>WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
-          <warName>msffinanceapi</warName>
+          <warName>ROOT</warName>
         </configuration>
       </plugin>
       <plugin>
